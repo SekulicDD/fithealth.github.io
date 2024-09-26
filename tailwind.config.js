@@ -10,7 +10,7 @@ module.exports = {
         sans: ['Open Sans', 'sans-serif'],
       },
       backgroundImage: {
-        'custom-bg': "url('/assets/images/bg.png')",
+        'custom-bg': "url('/fithealth.github.io/assets/images/bg.png')",
 
       },
     }
