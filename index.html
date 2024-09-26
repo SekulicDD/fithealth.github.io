@@ -11,12 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link rel="stylesheet" href="/assets/styles/output.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body >
     <header class="bg-white border-b border-gray-200 h-24 flex justify-between items-center fixed w-full left-0 px-6 sm:px-20 md:px-24 xl:px-522xl:px-72">
@@ -56,7 +52,7 @@
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 px-6 sm:px-20 md:px-24 xl:px-52 2xl:px-72">
     
          <div>
-            <h1 class="text-3xl sm:text-4xl font-semibold text">
+            <h1 class="text-4xl md:text-5xl font-bold text">
                 PROFESIONALNI <br>FIZIOTERAPEUT
             </h1>
             <p class="mt-5 text-gray-600 text-lg">Preko 16 godina iskustva u pružanju fizikalne terapije sa ciljem najbržeg mogućeg oporavka.</p>
@@ -66,7 +62,7 @@
                 </span>
               <div>
                 <h3 class="font-semibold text-xl ">Centar „FitHealth“ nalazi se u Sremčici</h3>
-                <p class="text-gray-600 mt-2">Nalazimo se na pristupačnoj lokaciji, u ulici Tomasa edisona.</p>
+                <p class="text-gray-600 mt-2">Nalazimo se u ul. Tomasa Edisona 6, pored MAXIJA, sa velikim parkingom i pogodnim pristupom za pacijente.</p>
               </div>
             </div>
             <div class="flex py-4 border-b border-gray-200 mt-3">
@@ -75,7 +71,8 @@
                 </span>
               <div>
                 <h3 class="font-semibold text-xl ">Individualan pristup</h3>
-                <p class="text-gray-600 mt-2">Posebno osmišljena terapija za sva moguća stanja i povrede.</p>
+                <p class="text-gray-600 mt-2">Posebno osmišljena terapija i vezbe za sva moguća stanja i povrede.
+                </p>
               </div>
             </div>
             <div class="flex py-4 mt-3">
@@ -89,13 +86,13 @@
             </div>
          </div>
          <div class="flex justify-center lg:justify-end lg:items-end mt-6 lg:mt-0">
-            <img src="https://placehold.co/400x400" alt="fizioterapeut">
+            <img src="assets/images/lokal.jpg" alt="fizioterapeut">
          </div>
         </section>
 
         <section class="grid grid-cols-1 lg:grid-cols-2 z-10 gap-x-12 px-6 sm:px-20 md:px-24 xl:px-52 2xl:px-72 bg-white py-12 mt-10">
             <div >
-                <h2 class="text-4xl sm:text-5xl font-semibold ">Fizikalna terapija i <span class="text-red-500">rehabilitacija</span></h2>
+                <h2 class="text-4xl sm:text-5xl font-bold ">Fizikalna terapija i <span class="text-red-500">rehabilitacija</span></h2>
                 <p class="text-xl text-gray-600 mt-3">Brzo rešenje za više od 50 stanja i povreda</p>
                 <div class="bg-red-500 w-12 h-1 mt-4"> </div>
                 <p class="text-gray-600 mt-4">Pomogli smo velikom broju pacijenata da otklone bol na najbrži mogući način. Pozovite nas i rešite problem bez čekanja!</p>
@@ -107,17 +104,21 @@
                     <li class="flex items-center">  <span class="material-symbols-outlined text-2xl me-2 text-red-500 font-bold"> check</span>Dobro opremljen i prijatan prostor</li>
                     <li class="flex items-center">  <span class="material-symbols-outlined text-2xl me-2 text-red-500 font-bold"> check</span>Zakazivanje termina 24/7</li>
                     <li class="flex items-center">  <span class="material-symbols-outlined text-2xl me-2 text-red-500 font-bold"> check</span>Do potpune rehabilitacije u kratkom roku</li>
+                    <li class="flex items-center">  <span class="material-symbols-outlined text-2xl me-2 text-red-500 font-bold"> check</span>Mogucnost pruzanja kucnih poseta - patronaza</li>
+                    <li class="flex items-center">  <span class="material-symbols-outlined text-2xl me-2 text-red-500 font-bold"> check</span>Korisnici MUP-ovih kartica imaju dodatni popust</li>
                 </ul>
-                <div class="mt-8">
+                <!-- <div class="mt-8">
                     <img src="https://placehold.co/500x280" alt="Zakazivanje" class="w-full">
-                </div>
+                </div> -->
             </div>
-            <div id="zakazi" class="scroll-m-32">
+            <div id="zakazi" class="scroll-m-32 mt-4 md:mt-0">
                 <div class="bg-red-500 text-white text-center px-2 py-4 text-2xl font-semibold">
                     <h2>Zakazivanje</h2>
                     <p>Pozovite: (+381) 63 73 05 272</p>
                 </div>
-                <form class="bg-gray-100 px-4 py-6 border-gray-300 border text-gray-700 ">
+                <form class="bg-gray-100 px-4 py-6 border-gray-300 border text-gray-700" 
+                id="mailForm"
+                method="post">
                     <div>
                         <label for="ime" >Ime i prezime</label>
                         <input type="text"  class="border border-gray-300 w-full p-2 mt-1" name="ime" id="ime" required>
@@ -131,8 +132,8 @@
                         <input type="text"  class="border border-gray-300 w-full p-2 mt-1" name="phone" id="phone" required>
                     </div>
                     <div class="mt-4">
-                        <label for="type">Usluga</label>
-                        <select class="w-full bg-white border border-gray-300 p-2 mt-1">
+                        <label for="subject">Usluga</label>
+                        <select class="w-full bg-white border border-gray-300 p-2 mt-1" required name="subject" id="subject">
                             <option disabled selected value> -- Izaberite uslugu -- </option>
                             <option value="rehabilitacija">Rehabilitacija</option>
                             <option value="terapija">Fizikalna terapija</option>
@@ -142,7 +143,10 @@
                         <label for="message">Dodatne napomene (opciono)</label>
                         <textarea name="message" id="message" class="border border-gray-300 w-full p-2 mt-1"></textarea>
                     </div>
-                    <button type="button" class="bg-red-500 text-white px-4 py-2 mt-4 w-full text-lg font-semibold">Pošalji</button>
+                    <button type="submit" id="submit" class="bg-red-500 text-white px-4 py-2 mt-4 w-full text-lg font-semibold disabled:bg-gray-500 disabled:cursor-default">Pošalji</button>
+                    <div id="mailStatus" class="text-lg mt-2 text-center">
+                        
+                    </div>
                 </form>
             </div>
         </section>
@@ -155,7 +159,7 @@
             <div class="grid grid-cols-1 text-white md:grid-cols-2 md:gap-x-6 xl:grid-cols-3">
                 <a href="fizikalna-terapija.html">
                     <div >
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">FIZIKALNA</p>
                             <p class="font-light">TERAPIJA</p>
                         </div>
@@ -164,16 +168,16 @@
                 </a>
                 <a href="kinezi-terapija.html">
                     <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">KINEZI-</p>
                             <p class="font-light">TERAPIJA</p>
                         </div>
                         <p class="bg-white text-gray-600 py-2 text">Kineziterapija predstavlja terapiju pokretom (vežbe).</p>
                     </div>
                 </a>
-                <a href="">
+                <a href="masaze.html">
                     <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">MASAŽE</p>
                         </div>
                         <p class="bg-white text-gray-600 py-2 text">Relaks, sportska i terapijska masaža</p>
@@ -181,7 +185,7 @@
                 </a>
                 <a href="">
                     <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">TRENING</p>
                             <p class="font-light mt-1">ZA KIČMU</p>
                         </div>
@@ -190,7 +194,7 @@
                 </a>
                 <a href="">
                     <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">SCHROTH</p>
                             <p class="font-light">TERAPIJA</p>
                         </div>
@@ -199,7 +203,7 @@
                 </a>
                 <a href="">
                     <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">DRY</p>
                             <p class="font-light">NEEDLING</p>
                         </div>
@@ -208,16 +212,7 @@
                 </a>
                 <a href="">
                     <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
-                            <p class="font-semibold">MENTORSKA</p>
-                            <p class="font-light">PRAKSA</p>
-                        </div>
-                        <p class="bg-white text-gray-600 py-2 text">Uvođenje i upoznavanje novog zaposlenog sa radnim mestom i radnim zadacima.</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">ASISTIRANO</p>
                             <p class="font-light">ISTEZANJE</p>
                         </div>
@@ -226,21 +221,37 @@
                 </a>
                 <a href="">
                     <div>
-                        <div class="mt-8 bg-red-500 p-4 text-5xl flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                            <p class="font-semibold">PRESO-</p>
+                            <p class="font-light">TERAPIJA</p>
+                        </div>
+                        <p class="bg-white text-gray-600 py-2 text">limfna drenaža</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
                             <p class="font-semibold">IZLAZAK</p>
                             <p class="font-light">NA TEREN</p>
                         </div>
                         <p class="bg-white text-gray-600 py-2 text">struje, magnet, laser, ultrazvuk</p>
                     </div>
                 </a>
-             
-            
+                <a href="">
+                    <div>
+                        <div class="mt-8 bg-red-500 p-4 text-[40px] flex flex-col items-center justify-center h-56 tracking-wide cursor-pointer">
+                            <p class="font-semibold">MENTORSKA</p>
+                            <p class="font-light">PRAKSA</p>
+                        </div>
+                        <p class="bg-white text-gray-600 py-2 text">Studenti i srednjoškolci dobrodošli ste na usavršavanje uz mentorsko praćenje.</p>
+                    </div>
+                </a>
             </div>
      
         </section>
         <section class="bg-white px-6 sm:px-20 md:px-24 lg:px-40 xl:px-64 2xl:px-[420px] py-8 text-center">
             <div class="mt-8 scroll-m-32" id="utisci">
-                <h2 class="text-4xl sm:text-5xl font-semibold">ŠTA SU <span class="text-red-500">NAŠI </span>PACIJENTI REKLI</h2>
+                <h2 class="text-4xl sm:text-5xl font-bold">ŠTA SU <span class="text-red-500">NAŠI </span>PACIJENTI REKLI</h2>
                 <p class="text-gray-600 text-2xl mt-4">Pogledajte samo neke od utisaka naših zadovoljnih klijenata</p>
                 <div class="flex justify-center">
                     <div class="bg-red-500 w-12 h-1 mt-4"> </div>
@@ -273,16 +284,18 @@
                 </div>
                 <div>
                     <p class="text-red-500 text-xl font-semibold">Email</p>
-                    <a href="mailto:fithealth@live.com" target="_blank" class="underline hover:text-red-500 transition-all duration-300">fithealth@live.com</a>
+                    <a href="mailto:fithealth@live.com" target="_blank" class="underline hover:text-red-500 transition-all duration-300"> fizioterapeutstankovic@yahoo.com</a>
                 </div>
                 <div>
                     <p class="text-red-500 text-xl font-semibold">Radno vreme</p>
                     <p>Ponedeljak – Petak</p>
-                    <p>09 – 20h</p>
+                    <p>08 – 20h</p>
+                    <p class="mt-2">Subota</p>
+                    <p>09 - 14h</p>
                 </div>
             </div>
             <div class="mt-14">
-                <h2 class="text-3xl sm:text-4xl font-semibold mb-6">Tomasa Edisona 6, Beograd</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Tomasa Edisona 6, Beograd</h2>
                 <div class="border border-gray-300">
                     <iframe class="w-full " 
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1364.611391152481!2d20.3814617012266!3d44.691639446352184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a0cc5ba3d1d39%3A0x53433afd00f14ea7!2sFit%20Health!5e0!3m2!1sen!2srs!4v1723643954554!5m2!1sen!2srs" 
@@ -297,9 +310,31 @@
         </section>
     </main>
 
-    <!-- <footer>
-        <p>&copy; Copyright © 2024. All rights reserved.</p>
-    </footer> -->
+    <footer>
+        <div class="fixed lg:hidden bottom-5 left-5">
+            <a href="https://www.instagram.com/fizio_terapeut_stankovic" target="_blank">
+                <div class="flex items-center justify-center size-12 mb-4 hover:scale-110 transition-all duration-300 bg-pink-700 rounded-full">
+                    <img src="assets/images/ig.png" alt="instagram" class="w-full">
+                </div>
+               
+            </a>
+            <a href="tel:+381637305272" target="_blank">
+                <div class="bg-red-500 rounded-full p-4 text-white size-12 flex items-center justify-center mb-3 hover:scale-110 transition-all duration-300">
+                    <span class="material-symbols-rounded text-3xl">
+                        call
+                        </span>
+                </div>
+            </a>
+            <a href="mailto:fithealth@live.com" target="_blank">
+                <div class="bg-blue-500 rounded-full p-4 text-white size-12 flex items-center justify-center hover:scale-110 transition-all duration-300">
+                    <span class="material-symbols-rounded text-3xl">
+                        mail
+                        </span>
+                </div>
+            </a>
+         
+        </div>
+    </footer>
     
     <script src="assets/script.js"></script> 
 </body>
