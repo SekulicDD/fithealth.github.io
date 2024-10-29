@@ -618,6 +618,10 @@ video {
   margin-inline-end: 1.25rem;
 }
 
+.ms-10 {
+  margin-inline-start: 2.5rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -652,6 +656,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ms-4 {
+  margin-inline-start: 1rem;
 }
 
 .block {
@@ -726,6 +734,10 @@ video {
 
 .scroll-m-32 {
   scroll-margin: 8rem;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-1 {
@@ -903,6 +915,18 @@ video {
 
 .pt-36 {
   padding-top: 9rem;
+}
+
+.ps-4 {
+  padding-inline-start: 1rem;
+}
+
+.ps-8 {
+  padding-inline-start: 2rem;
+}
+
+.ps-6 {
+  padding-inline-start: 1.5rem;
 }
 
 .text-center {
