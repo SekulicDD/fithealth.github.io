@@ -12,16 +12,21 @@
 
     <meta property="og:title" content="Fit Health - Fizioterapeut Stanković">
     <meta property="og:description" content="Profesionalne usluge fizikalne terapije za bolje zdravlje.">
-    <!-- <meta property="og:image" content="https://primer.com/assets/images/fit-health-cover.jpg">
-    <meta property="og:url" content="https://primer.com/fit-health"> -->
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://fithealth.co.rs"> 
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Fit Health - Fizioterapeut Stanković">
     <meta name="twitter:description" content="Profesionalne usluge fizikalne terapije za bolje zdravlje.">
-    <meta name="twitter:image" content="https://primer.com/assets/images/fit-health-cover.jpg">
+    <meta name="twitter:image" content="assets/images/apple-touch-icon.png">
 
     <meta name="language" content="sr">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +45,7 @@
     </style>
 </head>
 <body >
-    <header class="bg-white border-b border-gray-200 h-24 flex justify-between items-center fixed w-full left-0 px-6 sm:px-20 md:px-24 xl:px-522xl:px-72">
+    <header class="bg-white border-b border-gray-200 h-24 flex justify-between items-center fixed w-full left-0 px-6 sm:px-20 md:px-24 xl:px-522xl:px-72 z-50">
         <a href="index.html">
             <img src="assets/images/logo.png" alt="fizioterapeut stankovic" class="max-h-16 sm:max-h-20">
         </a>
@@ -112,17 +117,17 @@
               </div>
             </div>
          </div>
-         <div class=" mt-6 lg:mt-0">
+         <div class=" mt-6 lg:mt-0 ">
      
-            <div class="carousel "
+            <div class="carousel relative z-10"
        >
-           <div class="carousel-cell">
+           <div class="carousel-cell ">
              <img class="carousel-cell-image " 
                src="assets/images/lokal.jpg" alt="lokal" />
            </div>
            <div class="carousel-cell">
              <img class="carousel-cell-image"
-               src="assets/images/fiz-terapija.jpg" alt="masaza" />
+               src="assets/images/fiz-terapija.jpg" alt="fiz-terapija" />
            </div>
            <div class="carousel-cell">
              <img class="carousel-cell-image"
@@ -134,7 +139,7 @@
            </div>
            <div class="carousel-cell">
             <img class="carousel-cell-image"
-              src="assets/images/masaze.jpg" alt="masazea" />
+              src="assets/images/masaze.jpg" alt="masaza" />
           </div>
            </div>
          </div>
@@ -168,11 +173,12 @@
                     <p>Pozovite: (+381) 63 73 05 272</p>
                 </div>
                 <form class="bg-gray-100 px-4 py-6 border-gray-300 border text-gray-700" 
-                id="mailForm"
-                method="post">
+                id="contactForm"
+          
+             >
                     <div>
-                        <label for="ime" >Ime i prezime</label>
-                        <input type="text"  class="border border-gray-300 w-full p-2 mt-1" name="ime" id="ime" required>
+                        <label for="name" >Ime i prezime</label>
+                        <input type="text"  class="border border-gray-300 w-full p-2 mt-1" name="name" id="name" required>
                     </div>
                     <div class="mt-4">
                         <label for="email" >Email adresa</label>
@@ -189,13 +195,13 @@
                             <option value="fizikalna-terapija">Fizikalna terapija</option>
                             <option value="kinezi-terapija">Kineziterapija</option>
                             <option value="masaze">Masaže</option>
-                            <option value="trening-za-kicmu">Trening za kičmu</option>
+                            <option value="trening za kicmu">Trening za kičmu</option>
                             <option value="schroth-terapija">Schroth terapija</option>
                             <option value="dry-needling">Dry Needling</option>
-                            <option value="asistirano-istezanje">Asistirano istezanje</option>
+                            <option value="asistirano istezanje">Asistirano istezanje</option>
                             <option value="preso-terapija">Preso terapija</option>
-                            <option value="izlazak-na-teren">Izlazak na teren</option>
-                            <option value="mentorska-praksa">Mentorska praksa</option>
+                            <option value="izlazak na teren">Izlazak na teren</option>
+                            <option value="mentorska praksa">Mentorska praksa</option>
                         </select>
                     </div>
                     <div class="mt-4">
@@ -207,6 +213,7 @@
                         
                     </div>
                 </form>
+                <div id="formFeedback" style="margin-top: 20px;"></div>
             </div>
         </section>
 
@@ -334,6 +341,9 @@
                     <p class="mt-2"><span class="text-red-500"> Ivana</span>, Beograd</p>
                 </div>
             </div>
+            <div class="my-4">
+                <a class="bg-red-500 text-white py-3 px-12  mt-8 font-semibold text-lg" target="_blank" href="https://www.google.com/maps/place/Fit+Health/@44.6919078,20.3815926,17z/data=!4m8!3m7!1s0x475a0cc5ba3d1d39:0x53433afd00f14ea7!8m2!3d44.6919078!4d20.3815926!9m1!1b1!16s%2Fg%2F11_v54g8_?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">Ostavi i ti svoj utisak</a>
+            </div>
         </section>
         <section class="bg-gray-100 px-6 sm:px-10  xl:px-52 2xl:px-72 py-8 text-center pb-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-y-4 text-xl text-gray-600 md:gap-x-4 md:mt-10" id="kontakt">
@@ -400,5 +410,6 @@
   crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="assets/script.js"></script> 
+    <script src="assets/sendmail.js"></script>
 </body>
 </html>
