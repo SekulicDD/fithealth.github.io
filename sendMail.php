@@ -15,16 +15,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // SMTP server configuration
         $mail->isSMTP();
-        $mail->Host = 'sandbox.smtp.mailtrap.io';
+        $mail->Host = 'mail.fithealth.co.rs';
         $mail->SMTPAuth = true;
-        $mail->Username = 'da5f5b2a793073'; // SMTP username
-        $mail->Password = '1547506b516c63';       // SMTP password
-        //$mail->SMTPSecure = 'ssl';                     // Enable SSL encryption
-        $mail->Port = 2525;                             // SMTP port for SSL
+        $mail->Username = '_mainaccount@fithealth.co.rs'; // SMTP username
+        $mail->Password = 'TDMgz2jFMjEs';       // SMTP password
+        $mail->SMTPSecure = 'ssl';                     // Enable SSL encryption
+        $mail->Port = 465;                             // SMTP port for SSL
 
         // Set email parameters
         $mail->setFrom($email, $name);
-        $mail->addAddress('zaboravan99@gmail.com'); // Recipient's email
+        $mail->addAddress('fizioterapeutstankovic@yahoo.com'); // Recipient's email
         $mail->Subject = 'Zakazivanje termina - ' . $subject;
         $mail->Body = "Ime: $name\nTelefon: $phone\n";
         if(!empty($message)) {
